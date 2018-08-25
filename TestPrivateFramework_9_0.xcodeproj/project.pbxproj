@@ -17,6 +17,9 @@
 		22201E132131ADC600929B7F /* FTDeviceSupportTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22201E122131ADC500929B7F /* FTDeviceSupportTest.m */; };
 		22201E152131AE2900929B7F /* FTDeviceSupportTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22201E142131AE2900929B7F /* FTDeviceSupportTest.xib */; };
 		22201E182131B19900929B7F /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22201E172131B19900929B7F /* MainController.m */; };
+		22201E1E2131B78800929B7F /* CoreTelephonyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22201E1C2131B78800929B7F /* CoreTelephonyTest.m */; };
+		22201E1F2131B78800929B7F /* CoreTelephonyTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22201E1D2131B78800929B7F /* CoreTelephonyTest.xib */; };
+		22201E222131B7E300929B7F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22201E212131B7E300929B7F /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,10 @@
 		22201E142131AE2900929B7F /* FTDeviceSupportTest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FTDeviceSupportTest.xib; sourceTree = "<group>"; };
 		22201E162131B19800929B7F /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
 		22201E172131B19900929B7F /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		22201E1B2131B78800929B7F /* CoreTelephonyTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTelephonyTest.h; sourceTree = "<group>"; };
+		22201E1C2131B78800929B7F /* CoreTelephonyTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTelephonyTest.m; sourceTree = "<group>"; };
+		22201E1D2131B78800929B7F /* CoreTelephonyTest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreTelephonyTest.xib; sourceTree = "<group>"; };
+		22201E212131B7E300929B7F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22201E222131B7E300929B7F /* CoreTelephony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +63,7 @@
 			children = (
 				22201DF72131A94C00929B7F /* TestPrivateFramework */,
 				22201DF62131A94C00929B7F /* Products */,
+				22201E202131B7E300929B7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,11 +91,22 @@
 				22201E112131ADC500929B7F /* FTDeviceSupportTest.h */,
 				22201E122131ADC500929B7F /* FTDeviceSupportTest.m */,
 				22201E142131AE2900929B7F /* FTDeviceSupportTest.xib */,
+				22201E1B2131B78800929B7F /* CoreTelephonyTest.h */,
+				22201E1C2131B78800929B7F /* CoreTelephonyTest.m */,
+				22201E1D2131B78800929B7F /* CoreTelephonyTest.xib */,
 				22201E012131A94C00929B7F /* Assets.xcassets */,
 				22201E032131A94C00929B7F /* LaunchScreen.storyboard */,
 				22201E062131A94C00929B7F /* Info.plist */,
 			);
 			path = TestPrivateFramework;
+			sourceTree = "<group>";
+		};
+		22201E202131B7E300929B7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22201E212131B7E300929B7F /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +170,7 @@
 				22201E052131A94C00929B7F /* LaunchScreen.storyboard in Resources */,
 				22201E022131A94C00929B7F /* Assets.xcassets in Resources */,
 				22201E002131A94C00929B7F /* Main.storyboard in Resources */,
+				22201E1F2131B78800929B7F /* CoreTelephonyTest.xib in Resources */,
 				22201E152131AE2900929B7F /* FTDeviceSupportTest.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +188,7 @@
 				22201DFA2131A94C00929B7F /* AppDelegate.m in Sources */,
 				22201E182131B19900929B7F /* MainController.m in Sources */,
 				22201E102131AA5A00929B7F /* Extensions.m in Sources */,
+				22201E1E2131B78800929B7F /* CoreTelephonyTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

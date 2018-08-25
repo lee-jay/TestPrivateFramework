@@ -9,7 +9,6 @@
 #import "MainController.h"
 #import <objc/runtime.h>
 #import "Extensions.h"
-#import "FTDeviceSupportTest.h"
 
 @interface MainController()<UITableViewDataSource, UITableViewDelegate> {
     IBOutlet UITableView *tvControllers;
@@ -24,7 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.controllers = @[@"FTDeviceSupportTest"];
+    self.controllers = @[@"FTDeviceSupportTest",
+                         @"CoreTelephonyTest"];
     //[tvControllers registerNib:[UINib nibWithNibName:@"UITableViewCell" bundle:nil] forCellReuseIdentifier:@"UITableViewCell"];
     [tvControllers registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
 }
@@ -51,7 +51,8 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     NSString *name = [self.controllers objectAtIndex:indexPath.row];
-    FTDeviceSupportTest *controller = [[FTDeviceSupportTest alloc] initWithNibName:name bundle:nil];
+    Class cls = NSClassFromString(name);
+    UIViewController *controller = [[cls alloc] initWithNibName:name bundle:nil];
     [self.navigationController pushViewController:controller animated:YES];
 }
 
