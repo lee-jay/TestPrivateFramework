@@ -14,6 +14,9 @@
 		22201E052131A94C00929B7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22201E032131A94C00929B7F /* LaunchScreen.storyboard */; };
 		22201E082131A94C00929B7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22201E072131A94C00929B7F /* main.m */; };
 		22201E102131AA5A00929B7F /* Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 22201E0F2131AA5A00929B7F /* Extensions.m */; };
+		22201E132131ADC600929B7F /* FTDeviceSupportTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22201E122131ADC500929B7F /* FTDeviceSupportTest.m */; };
+		22201E152131AE2900929B7F /* FTDeviceSupportTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22201E142131AE2900929B7F /* FTDeviceSupportTest.xib */; };
+		22201E182131B19900929B7F /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22201E172131B19900929B7F /* MainController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,11 @@
 		22201E072131A94C00929B7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22201E0E2131AA5A00929B7F /* Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Extensions.h; sourceTree = "<group>"; };
 		22201E0F2131AA5A00929B7F /* Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Extensions.m; sourceTree = "<group>"; };
+		22201E112131ADC500929B7F /* FTDeviceSupportTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTDeviceSupportTest.h; sourceTree = "<group>"; };
+		22201E122131ADC500929B7F /* FTDeviceSupportTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTDeviceSupportTest.m; sourceTree = "<group>"; };
+		22201E142131AE2900929B7F /* FTDeviceSupportTest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FTDeviceSupportTest.xib; sourceTree = "<group>"; };
+		22201E162131B19800929B7F /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		22201E172131B19900929B7F /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,11 @@
 				22201DFB2131A94C00929B7F /* ViewController.h */,
 				22201DFC2131A94C00929B7F /* ViewController.m */,
 				22201DFE2131A94C00929B7F /* Main.storyboard */,
+				22201E162131B19800929B7F /* MainController.h */,
+				22201E172131B19900929B7F /* MainController.m */,
+				22201E112131ADC500929B7F /* FTDeviceSupportTest.h */,
+				22201E122131ADC500929B7F /* FTDeviceSupportTest.m */,
+				22201E142131AE2900929B7F /* FTDeviceSupportTest.xib */,
 				22201E012131A94C00929B7F /* Assets.xcassets */,
 				22201E032131A94C00929B7F /* LaunchScreen.storyboard */,
 				22201E062131A94C00929B7F /* Info.plist */,
@@ -137,6 +150,7 @@
 				22201E052131A94C00929B7F /* LaunchScreen.storyboard in Resources */,
 				22201E022131A94C00929B7F /* Assets.xcassets in Resources */,
 				22201E002131A94C00929B7F /* Main.storyboard in Resources */,
+				22201E152131AE2900929B7F /* FTDeviceSupportTest.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,8 +162,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				22201DFD2131A94C00929B7F /* ViewController.m in Sources */,
+				22201E132131ADC600929B7F /* FTDeviceSupportTest.m in Sources */,
 				22201E082131A94C00929B7F /* main.m in Sources */,
 				22201DFA2131A94C00929B7F /* AppDelegate.m in Sources */,
+				22201E182131B19900929B7F /* MainController.m in Sources */,
 				22201E102131AA5A00929B7F /* Extensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
