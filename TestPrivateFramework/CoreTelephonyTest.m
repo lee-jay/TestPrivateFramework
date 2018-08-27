@@ -34,16 +34,15 @@ extern NSString *CTSettingCopyMyPhoneNumber();
     networkInfo = [[CTTelephonyNetworkInfo alloc] init];
     
     //当sim卡更换时弹出此窗口
+    __weak CoreTelephonyTest *weakSelf = self;
     networkInfo.subscriberCellularProviderDidUpdateNotifier = ^(CTCarrier *carrier){
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
-                                                        message:@"Sim card changed"
-                                                       delegate:nil
-                                              cancelButtonTitle:@"Dismiss"
-                                              otherButtonTitles:nil];
-        
-        [alert show];
-        
-        //CTSettingCopyMyPhoneNumber
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
+                                                                       message:@"Sim card changed"
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        [alert addAction:[UIAlertAction actionWithTitle:@"Dismiss"
+                                                  style:UIAlertActionStyleDestructive
+                                                handler:nil]];
+        [weakSelf presentViewController:alert animated:YES completion:nil];
     };
     
     [self startDetect];
@@ -109,19 +108,26 @@ extern NSString *CTSettingCopyMyPhoneNumber();
 }
 
 - (NSString*)getMyNumber {
-    NSLog(@"Open CoreTelephony");
-    void *lib = dlopen("/Symbols/System/Library/Framework/CoreTelephony.framework/CoreTelephony", RTLD_LAZY);
-    NSLog(@"Get CTSettingCopyMyPhoneNumber from CoreTelephony");
-    NSString* (*pCTSettingCopyMyPhoneNumber)() = dlsym(lib, "CTSettingCopyMyPhoneNumber");
-    NSLog(@"Get CTSettingCopyMyPhoneNumber from CoreTelephony");
+    // Method 1: Already deprecated!
+//    void *lib = dlopen("/Symbols/System/Library/Framework/CoreTelephony.framework/CoreTelephony", RTLD_LAZY);
+//    NSString* (*pCTSettingCopyMyPhoneNumber)() = dlsym(lib, "CTSettingCopyMyPhoneNumber");
+//    if (pCTSettingCopyMyPhoneNumber == nil) {
+//        NSLog(@"pCTSettingCopyMyPhoneNumber is nil");
+//        return nil;
+//    }
+//    NSString* ownPhoneNumber = pCTSettingCopyMyPhoneNumber();
+//    dlclose(lib);
+//    return ownPhoneNumber;
     
-    if (pCTSettingCopyMyPhoneNumber == nil) {
-        NSLog(@"pCTSettingCopyMyPhoneNumber is nil");
-        return nil;
-    }
-    NSString* ownPhoneNumber = pCTSettingCopyMyPhoneNumber();
-    dlclose(lib);
-    return ownPhoneNumber;
+    // Method 2: Already deprecated!
+//    NSString *num = [[NSUserDefaults standardUserDefaults] stringForKey:@"SBFormattedPhoneNumber"];
+//    return num;
+    
+    // Method 2: Needs Jailbroken...
+    NSString *commcenter = @"/private/var/wireless/Library/Preferences/com.apple.commcenter.plist";
+    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:commcenter];
+    NSString *phoneNumber = [dict valueForKey:@"PhoneNumber"];
+    return phoneNumber;
 }
 
 @end
