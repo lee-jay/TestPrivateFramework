@@ -123,7 +123,7 @@ extern NSString *CTSettingCopyMyPhoneNumber();
 //    NSString *num = [[NSUserDefaults standardUserDefaults] stringForKey:@"SBFormattedPhoneNumber"];
 //    return num;
     
-    // Method 2: Needs Jailbroken...
+    // Method 3: Needs Jailbroken...
     NSString *commcenter = @"/private/var/wireless/Library/Preferences/com.apple.commcenter.plist";
     NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:commcenter];
     NSString *phoneNumber = [dict valueForKey:@"PhoneNumber"];
