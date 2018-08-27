@@ -14,6 +14,11 @@
 		F49D7C20212E69A3001F5C7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F49D7C1E212E69A3001F5C7B /* LaunchScreen.storyboard */; };
 		F49D7C23212E69A3001F5C7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F49D7C22212E69A3001F5C7B /* main.m */; };
 		F49D7C49212FB3C6001F5C7B /* Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F49D7C48212FB3C6001F5C7B /* Extensions.m */; };
+		F4FE457C2133DE4C00995272 /* CoreTelephonyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FE45742133DE4B00995272 /* CoreTelephonyTest.m */; };
+		F4FE457D2133DE4C00995272 /* FTDeviceSupportTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FE45762133DE4C00995272 /* FTDeviceSupportTest.m */; };
+		F4FE457E2133DE4C00995272 /* CoreTelephonyTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4FE45782133DE4C00995272 /* CoreTelephonyTest.xib */; };
+		F4FE457F2133DE4C00995272 /* FTDeviceSupportTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4FE45792133DE4C00995272 /* FTDeviceSupportTest.xib */; };
+		F4FE45802133DE4C00995272 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FE457B2133DE4C00995272 /* MainController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,14 @@
 		F49D7C22212E69A3001F5C7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F49D7C47212FB3C6001F5C7B /* Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extensions.h; sourceTree = "<group>"; };
 		F49D7C48212FB3C6001F5C7B /* Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Extensions.m; sourceTree = "<group>"; };
+		F4FE45742133DE4B00995272 /* CoreTelephonyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTelephonyTest.m; sourceTree = "<group>"; };
+		F4FE45752133DE4B00995272 /* FTDeviceSupportTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTDeviceSupportTest.h; sourceTree = "<group>"; };
+		F4FE45762133DE4C00995272 /* FTDeviceSupportTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTDeviceSupportTest.m; sourceTree = "<group>"; };
+		F4FE45772133DE4C00995272 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		F4FE45782133DE4C00995272 /* CoreTelephonyTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreTelephonyTest.xib; sourceTree = "<group>"; };
+		F4FE45792133DE4C00995272 /* FTDeviceSupportTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTDeviceSupportTest.xib; sourceTree = "<group>"; };
+		F4FE457A2133DE4C00995272 /* CoreTelephonyTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTelephonyTest.h; sourceTree = "<group>"; };
+		F4FE457B2133DE4C00995272 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +80,15 @@
 				F49D7C14212E69A1001F5C7B /* AppDelegate.m */,
 				F49D7C16212E69A1001F5C7B /* ViewController.h */,
 				F49D7C17212E69A1001F5C7B /* ViewController.m */,
+				F4FE45772133DE4C00995272 /* MainController.h */,
+				F4FE457B2133DE4C00995272 /* MainController.m */,
 				F49D7C19212E69A1001F5C7B /* Main.storyboard */,
+				F4FE457A2133DE4C00995272 /* CoreTelephonyTest.h */,
+				F4FE45742133DE4B00995272 /* CoreTelephonyTest.m */,
+				F4FE45782133DE4C00995272 /* CoreTelephonyTest.xib */,
+				F4FE45752133DE4B00995272 /* FTDeviceSupportTest.h */,
+				F4FE45762133DE4C00995272 /* FTDeviceSupportTest.m */,
+				F4FE45792133DE4C00995272 /* FTDeviceSupportTest.xib */,
 				F49D7C1C212E69A3001F5C7B /* Assets.xcassets */,
 				F49D7C1E212E69A3001F5C7B /* LaunchScreen.storyboard */,
 				F49D7C21212E69A3001F5C7B /* Info.plist */,
@@ -136,6 +157,8 @@
 				F49D7C20212E69A3001F5C7B /* LaunchScreen.storyboard in Resources */,
 				F49D7C1D212E69A3001F5C7B /* Assets.xcassets in Resources */,
 				F49D7C1B212E69A1001F5C7B /* Main.storyboard in Resources */,
+				F4FE457E2133DE4C00995272 /* CoreTelephonyTest.xib in Resources */,
+				F4FE457F2133DE4C00995272 /* FTDeviceSupportTest.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +172,10 @@
 				F49D7C18212E69A1001F5C7B /* ViewController.m in Sources */,
 				F49D7C23212E69A3001F5C7B /* main.m in Sources */,
 				F49D7C15212E69A1001F5C7B /* AppDelegate.m in Sources */,
+				F4FE457D2133DE4C00995272 /* FTDeviceSupportTest.m in Sources */,
 				F49D7C49212FB3C6001F5C7B /* Extensions.m in Sources */,
+				F4FE45802133DE4C00995272 /* MainController.m in Sources */,
+				F4FE457C2133DE4C00995272 /* CoreTelephonyTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
